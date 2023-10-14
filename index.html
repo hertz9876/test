@@ -29,8 +29,22 @@ let masina = {
         suprafata: 16, 
         strada: "Ion Creanga",
         ocupat: false
+    },
+    salut: function (){
+        console.log("salut sunt masina ta "); 
     }
+        
 }
+
+masina.salut();
+
+
+
+
+
+
+
+
 
 a=5;
 b=2;
@@ -55,23 +69,39 @@ for(i=0;i<3;i++){ //pentru repetie de date sa dea date afara repetitiv
 }
 
 
-function salut(n){
-    console.log("Salut"+n);
+function impartire(a, b){
+    console.log("Impartirea e = "+a/b)
 }
 
-salut();
+
+function datePersonale(nume, varsta, angajat){
+    
+    if(angajat===true){
+        angajat="angajat"
+    }
+    else{
+        angajat="somer"
+    }
 
 
 
+    console.log(nume + " are varsta de " + varsta + " de ani si este " + angajat);
+}
+
+//datePersonale("Radu", 30, true);
+
+//datePersonale("vlad", 21, false);
 
 
+function afisareMasini(x){
+    for(i=0; i<x.length;i++){
+        console.log(x[i]);
+    }
+}
 
 
-
-
-
-
-
+afisareMasini(["Audi", "BMW", "Seat"]);
+afisareMasini(["Audi", "BMW", "Seat", "dacia"]);
 
 
 
